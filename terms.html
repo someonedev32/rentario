@@ -1,10 +1,11 @@
-<!-- terms.html (RentarioPro) -->
+<!-- terms.html — Rentario Pro -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Terms of Service — Rentario Pro</title>
+  <title>Terms of Use — Rentario Pro</title>
+  <meta name="description" content="Terms of Use for Rentario Pro. Offline rent-a-car management app with auto-renewable subscriptions." />
   <style>
     :root{
       --bg:#0b0c10; --panel:#12141b; --text:#e8eaf0; --muted:#a9afbf;
@@ -12,11 +13,19 @@
     }
     *{box-sizing:border-box}
     body{
-      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      background:linear-gradient(180deg,#0b0c10,#090a0d); color:var(--text);
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:linear-gradient(180deg,#0b0c10,#090a0d);
+      color:var(--text);
     }
     .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px}
-    .card{background:rgba(18,20,27,.88); border:1px solid var(--border); border-radius:16px; padding:18px; margin-top:16px}
+    .card{
+      background:rgba(18,20,27,.88);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:18px;
+      margin-top:16px;
+    }
     header.card{margin-top:0}
     h1{margin:0 0 8px;font-size:28px}
     h2{margin:0 0 10px;font-size:20px}
@@ -32,215 +41,187 @@
     hr{border:0;border-top:1px solid var(--border); margin:14px 0}
     footer{color:var(--muted); font-size:13px}
     code{background:var(--chip); padding:2px 6px; border-radius:8px; border:1px solid var(--border)}
-    .pill-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .pill{border:1px solid var(--border); background:var(--chip); border-radius:999px; padding:6px 10px; font-size:13px; color:var(--muted)}
-    .price-box{border:1px solid var(--border); background:var(--chip); border-radius:14px; padding:12px; margin:10px 0}
-    .price-box strong{font-size:15px}
-    .small{color:var(--muted); font-size:13px}
+    .callout{
+      border:1px solid var(--border);
+      background:rgba(15,17,24,.75);
+      border-radius:14px;
+      padding:12px;
+      margin:10px 0;
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header class="card">
-      <h1>Rentario Pro — Terms of Service</h1>
+      <h1>Terms of Use — Rentario Pro</h1>
       <div class="meta">
-        Last updated: <strong>LAST_UPDATED_DATE</strong> &nbsp;•&nbsp; Platform: iOS (Apple App Store) &nbsp;•&nbsp; Applies to: RentarioPro subscriptions
+        Last updated: <strong>2026-01-22</strong> &nbsp;•&nbsp;
+        App: Rentario Pro (iOS)
       </div>
 
-      <div class="pill-row" aria-label="high level summary pills">
-        <div class="pill">Readable + App Store-friendly</div>
-        <div class="pill">Auto-renewing subscriptions</div>
-        <div class="pill">Offline data stored on-device</div>
+      <div class="callout">
+        By downloading or using Rentario Pro (the “App”), you agree to these Terms of Use (“Terms”).
+        If you do not agree, do not use the App.
       </div>
-
-      <p class="meta" style="margin-top:12px">
-        <strong>Important:</strong> These Terms include details about auto-renewing subscriptions, the 7-day free trial, cancellation rules, and refunds.
-        If anything here conflicts with Apple’s rules, Apple’s rules control for App Store purchases.
-      </p>
     </header>
 
     <section class="card toc" aria-label="Table of contents">
       <h2>Contents</h2>
-      <a href="#acceptance">1. Acceptance</a>
-      <a href="#service">2. The Service</a>
-      <a href="#subscriptions">3. Subscriptions, Free Trial & Pricing</a>
+      <a href="#service">1. The Service</a>
+      <a href="#eligibility">2. Eligibility</a>
+      <a href="#subscriptions">3. Subscriptions & Free Trial</a>
       <a href="#billing">4. Billing, Renewal & Cancellation</a>
       <a href="#refunds">5. Refunds</a>
-      <a href="#apple-terms">6. Apple App Store Terms</a>
-      <a href="#data">7. User Content & Data</a>
-      <a href="#prohibited">8. Prohibited Use</a>
-      <a href="#disclaimers">9. Disclaimers</a>
-      <a href="#liability">10. Limitation of Liability</a>
-      <a href="#termination">11. Termination</a>
-      <a href="#changes">12. Changes</a>
-      <a href="#contact">13. Contact</a>
-    </section>
-
-    <section class="card" id="acceptance">
-      <h2>1. Acceptance</h2>
-      <p>
-        By downloading, accessing, or using RentarioPro (the “App”), you agree to these Terms of Service (“Terms”).
-        If you do not agree, do not use the App.
-      </p>
+      <a href="#data">6. User Data</a>
+      <a href="#prohibited">7. Prohibited Use</a>
+      <a href="#disclaimer">8. Disclaimer</a>
+      <a href="#liability">9. Limitation of Liability</a>
+      <a href="#termination">10. Termination</a>
+      <a href="#changes">11. Changes</a>
+      <a href="#contact">12. Contact</a>
     </section>
 
     <section class="card" id="service">
-      <h2>2. The Service</h2>
+      <h2>1) The Service</h2>
       <p>
-        The App provides tools for managing rent-a-car reservations, vehicles, and customer records.
-        Features may change over time, and some features may require an active subscription.
+        Rentario Pro is an offline management application designed for rent-a-car businesses.
+        The App allows you to manage reservations, vehicles, and customer records on your device.
       </p>
-      <p class="small">
-        The App is designed to work offline. Internet access may be required only for App Store purchase flows and subscription verification.
+      <p class="meta">
+        The App is designed to work offline. Internet access may be required only for App Store purchase flows and subscription validation.
+      </p>
+    </section>
+
+    <section class="card" id="eligibility">
+      <h2>2) Eligibility</h2>
+      <p>
+        You may use the App only if you are legally permitted to do so under applicable laws.
+        The App is intended for business use and is not directed at children.
       </p>
     </section>
 
     <section class="card" id="subscriptions">
-      <h2>3. Subscriptions, Free Trial & Pricing</h2>
+      <h2>3) Subscriptions & Free Trial</h2>
       <p>
-        RentarioPro offers auto-renewing subscriptions. Pricing may vary by region and may include taxes where applicable.
-        Your final price is shown in Apple’s purchase dialog before you confirm.
+        Rentario Pro offers auto-renewable subscriptions and may include a free trial.
+        All features are available during the free trial period.
       </p>
-
-      <h3>Free Trial</h3>
-      <div class="price-box">
-        <strong>7 days</strong><br>
-        <span class="small">Trial converts to a paid subscription unless cancelled at least 24 hours before it ends.</span>
-      </div>
-
-      <h3>Plans</h3>
-      <div class="price-box">
-        <strong>Pro — 6 Months</strong><br>
-        €29.99 / 6 months<br>
-        <span class="small">Auto-renews every 6 months unless cancelled.</span>
-      </div>
-
-      <div class="price-box">
-        <strong>Pro — 12 Months</strong><br>
-        €49.99 / 12 months<br>
-        <span class="small">Auto-renews every 12 months unless cancelled.</span>
-      </div>
-
-      <p class="small">
-        Auto-renewable subscription • Manage in Apple ID settings • Cancel ≥24h before renewal • Prices shown in App Store at purchase
-      </p>
-
-      <h3>What you get with Pro</h3>
       <ul>
-        <li>Premium access to subscription features available in the App</li>
-        <li>Ongoing updates (where applicable)</li>
+        <li>6-month subscription</li>
+        <li>12-month subscription</li>
       </ul>
-      <p class="small">
-        Note: Only promise features that actually exist in your build. If you want, list the exact Pro features you implemented.
+      <p class="meta">
+        Pricing is shown in the App Store purchase dialog before you confirm the purchase.
       </p>
     </section>
 
     <section class="card" id="billing">
-      <h2>4. Billing, Renewal & Cancellation</h2>
+      <h2>4) Billing, Renewal & Cancellation</h2>
       <p>
-        Payment is charged to your Apple ID account at confirmation of purchase (or at the end of the free trial, if applicable).
-        Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period.
+        Payment is charged to your Apple ID account at confirmation of purchase
+        or at the end of the free trial if not cancelled.
       </p>
       <p>
-        You can manage or cancel your subscription in:
-        <code>Settings → Apple ID → Subscriptions</code> (on iPhone/iPad), or via App Store account settings.
+        Subscriptions automatically renew unless cancelled at least 24 hours
+        before the end of the current subscription period.
       </p>
-      <p class="small">
-        No partial period refunds via us: For App Store purchases, refunds are handled by Apple (see Section 5).
+      <p>
+        You can manage or cancel subscriptions in:
+        <code>Settings → Apple ID → Subscriptions</code>
+      </p>
+      <p class="meta">
+        Billing, renewals, and subscription management are handled exclusively by Apple.
       </p>
     </section>
 
     <section class="card" id="refunds">
-      <h2>5. Refunds</h2>
+      <h2>5) Refunds</h2>
       <p>
-        Purchases made through the Apple App Store are generally handled by Apple.
-        If you believe you are entitled to a refund, request it through Apple’s refund process.
+        Purchases made through the Apple App Store are subject to Apple’s refund policies.
+        We do not issue refunds directly.
       </p>
-      <ul>
-        <li>Use Apple’s support flow for refunds and purchase issues.</li>
-        <li>Select the relevant transaction and follow Apple’s steps.</li>
-      </ul>
-      <p class="small">We do not have the ability to issue refunds for App Store purchases directly.</p>
-    </section>
-
-    <section class="card" id="apple-terms">
-      <h2>6. Apple App Store Terms</h2>
-      <p>If you downloaded the App from the Apple App Store, you acknowledge that:</p>
-      <ul>
-        <li>These Terms are between you and the developer, not Apple.</li>
-        <li>Apple has no obligation to provide support for the App.</li>
-        <li>Apple is not responsible for addressing claims relating to the App (product liability, legal compliance, consumer protection).</li>
-        <li>Your use of the App must comply with Apple’s applicable terms and policies.</li>
-      </ul>
+      <p>
+        To request a refund, use Apple’s official refund request process.
+      </p>
     </section>
 
     <section class="card" id="data">
-      <h2>7. User Content & Data</h2>
+      <h2>6) User Data</h2>
       <p>
-        You are responsible for the data you enter into the App (e.g., customer details, reservations, notes).
-        You must ensure you have the right to store and process any personal data you input.
+        You are responsible for the data you enter into the App, including customer and booking information.
+        The App stores data locally on your device.
       </p>
       <p>
-        The App stores business data <strong>locally on your device</strong>. If you export or share data, you are responsible for where it is sent.
+        We do not upload or store your business data on our servers.
       </p>
       <p>
-        For privacy practices, see our <a href="privacy.html">Privacy Policy</a>.
+        For details on privacy practices, see our
+        <a href="privacy.html">Privacy Policy</a>.
       </p>
     </section>
 
     <section class="card" id="prohibited">
-      <h2>8. Prohibited Use</h2>
+      <h2>7) Prohibited Use</h2>
       <p>You agree not to:</p>
       <ul>
-        <li>Use the App for illegal activity or to violate any laws applicable to your business.</li>
-        <li>Reverse engineer, decompile, or attempt to extract source code except where permitted by law.</li>
-        <li>Interfere with or disrupt the App or its security.</li>
-        <li>Misrepresent your identity or business information stored or generated through the App.</li>
+        <li>Use the App for unlawful purposes.</li>
+        <li>Attempt to reverse engineer or modify the App.</li>
+        <li>Interfere with the App’s security or functionality.</li>
+        <li>Misuse the App in a way that could harm others or violate laws.</li>
       </ul>
     </section>
 
-    <section class="card" id="disclaimers">
-      <h2>9. Disclaimers</h2>
+    <section class="card" id="disclaimer">
+      <h2>8) Disclaimer</h2>
       <p>
-        The App is provided “as is” and “as available”. We do not guarantee uninterrupted or error-free operation.
-        The App does not provide legal advice. You are responsible for compliance with laws and regulations applicable to your business.
+        The App is provided “as is” and “as available”.
+        We do not guarantee uninterrupted or error-free operation.
+      </p>
+      <p>
+        The App does not provide legal, financial, or accounting advice.
+        You are responsible for complying with laws applicable to your business.
       </p>
     </section>
 
     <section class="card" id="liability">
-      <h2>10. Limitation of Liability</h2>
+      <h2>9) Limitation of Liability</h2>
       <p>
-        To the maximum extent permitted by law, we are not liable for any indirect, incidental, special, consequential, or punitive damages,
-        or any loss of profits, data, or goodwill arising from your use of the App.
+        To the maximum extent permitted by law, we are not liable for any indirect,
+        incidental, or consequential damages arising from your use of the App.
       </p>
     </section>
 
     <section class="card" id="termination">
-      <h2>11. Termination</h2>
+      <h2>10) Termination</h2>
       <p>
-        We may suspend or terminate access to the App if you materially breach these Terms or if required by law.
-        You may stop using the App at any time. Active subscriptions must be cancelled through Apple.
+        You may stop using the App at any time.
+        We may suspend or terminate access if required by law or if these Terms are violated.
+      </p>
+      <p class="meta">
+        Active subscriptions must be cancelled through Apple.
       </p>
     </section>
 
     <section class="card" id="changes">
-      <h2>12. Changes</h2>
+      <h2>11) Changes to These Terms</h2>
       <p>
-        We may update these Terms from time to time. The “Last updated” date will change when we do.
-        Continued use of the App after updates means you accept the updated Terms.
+        We may update these Terms from time to time.
+        The “Last updated” date will reflect the most recent version.
+        Continued use of the App means acceptance of the updated Terms.
       </p>
     </section>
 
     <section class="card" id="contact">
-      <h2>13. Contact</h2>
-      <p>For support or questions about these Terms, contact:</p>
+      <h2>12) Contact</h2>
+      <p>If you have questions about these Terms, contact:</p>
       <ul>
-        <li><strong>Support Email:</strong> <a href="mailto:info@instaserver.net">nfo@instaserver.net</a></li>
-        <li><strong>Developer/Business Name:</strong> Rentario Pro</li>
+        <li><strong>App:</strong> Rentario Pro</li>
+        <li><strong>Support Email:</strong> <a href="mailto:support@instaserver.net">support@instaserver.net</a></li>
+        <li><strong>Developer/Business Name:</strong> instaserver.net</li>
         <li><strong>Website:</strong> <a href="WEBSITE_URL">instaserver.net</a></li>
       </ul>
-      <hr>
-      <footer>© <span id="year"></span> Rentario Pro All rights reserved.</footer>
+      <hr />
+      <footer>© <span id="year"></span> instaserver.net All rights reserved.</footer>
     </section>
   </div>
 
